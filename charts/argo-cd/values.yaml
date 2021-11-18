@@ -17,6 +17,8 @@ global:
     tag: ""
     # -- If defined, a imagePullPolicy applied to all ArgoCD deployments
     imagePullPolicy: IfNotPresent
+  # -- Annotations for the all deployments
+  annotations: {}
   # -- Annotations for the all deployed pods
   podAnnotations: {}
   # -- Labels for the all deployed pods
@@ -350,6 +352,9 @@ dex:
   #     name: config-map-name
   # - secretRef:
   #     name: secret-name
+
+  # -- Annotations to be added to the Dex server deployment
+  annotations: {}
 
   # -- Annotations to be added to the Dex server pods
   podAnnotations: {}
@@ -712,6 +717,9 @@ server:
   logFormat: text
   # -- Argo CD server log level
   logLevel: info
+
+  # -- Annotations to be added to server deploymnent
+  annotations: {}
 
   # -- Annotations to be added to server pods
   podAnnotations: {}
