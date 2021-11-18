@@ -17,6 +17,8 @@ global:
     tag: ""
     # -- If defined, a imagePullPolicy applied to all ArgoCD deployments
     imagePullPolicy: IfNotPresent
+  # -- Annotations for all the deployments
+  annotations: {}
   # -- Annotations for the all deployed pods
   podAnnotations: {}
   # -- Labels for the all deployed pods
