@@ -353,6 +353,9 @@ dex:
   # - secretRef:
   #     name: secret-name
 
+  # -- Annotations to be added to the Dex server deployment
+  annotations: {}
+
   # -- Annotations to be added to the Dex server pods
   podAnnotations: {}
 
@@ -714,6 +717,9 @@ server:
   logFormat: text
   # -- Argo CD server log level
   logLevel: info
+
+  # -- Annotations to be added to server deployment
+  annotations: {}
 
   # -- Annotations to be added to server pods
   podAnnotations: {}
